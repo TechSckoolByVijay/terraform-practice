@@ -20,6 +20,10 @@ terraform {
 
 # Terraform State Storage to Azure Storage Container
   backend "azurerm" {
+    resource_group_name   = "core-resources"
+    storage_account_name  = "myorgterraformstg"
+    container_name        = "tfstatefiles"
+    key                   = "pwc2.terraform.tfstate"
   }  
 
 }
@@ -42,7 +46,7 @@ resource "random_string" "random" {
 
 
 resource "azurerm_resource_group" "example" {
-  name     = "assignmentvijaysaini2"
+  name     = "localdeploywithbkend"
   location = "Central India"
 }
 
