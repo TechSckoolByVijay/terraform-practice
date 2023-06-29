@@ -42,7 +42,7 @@ resource "random_string" "random" {
 
 
 resource "azurerm_resource_group" "example" {
-  name     = "assignmentvijaysaini"
+  name     = "assignmentvijaysaini2"
   location = "Central India"
 }
 
