@@ -20,10 +20,6 @@ terraform {
 
 # Terraform State Storage to Azure Storage Container
   backend "azurerm" {
-    resource_group_name   = "core-resources"
-    storage_account_name  = "myorgterraformstg"
-    container_name        = "tfstatefiles"
-    key                   = "pwc.terraform.tfstate"
   }  
 
 }
